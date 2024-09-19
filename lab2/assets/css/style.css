@@ -1,7 +1,37 @@
 h1 {
     text-align: center;
 }
+header, aside, main, footer {
+    padding: 1rem;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+header a {
+    text-decoration: none;
+    color: #003b46;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #07575b;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
