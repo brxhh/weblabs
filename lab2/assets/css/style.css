@@ -3,18 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-    text-align: center;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 header, aside, main, footer {
     padding: 1rem;
@@ -24,11 +12,13 @@ header {
     display: flex;
     align-items: center;
     border: 2px solid #003b46;
+    background-color: #ffd700;
 }
 
 header img {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 header nav ul {
@@ -41,31 +31,103 @@ header nav ul {
 
 header a {
     text-decoration: none;
-    color: #003b46;
+    color: #002855;
     font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+a {
+    color: #ffd700;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ffd700;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffed6f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+aside {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 3px dashed #002855;
+    background-color: #ffe135;
+}
+.container{
+    display: flex;
+    height: 80vh;
+}
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 15px;
 }
 
 aside a {
-    color: #6203c7;
+    color: #002855;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-aside ul {
-    list-style: none;
+aside a:hover {
+    color: #ffd700;
+    background-color: #002855;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 main {
     flex: 1;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #002855;
+}
+
+.pictures {
+    margin-top: -760px;
+    margin-left: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.pictures img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pictures img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 footer {
     background-color: #002855;
-    color: white;
+    color: #ffd700;
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
@@ -80,6 +142,7 @@ footer h3 {
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 footer ul {
